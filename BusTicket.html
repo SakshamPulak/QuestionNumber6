@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bus Ticket</title>
+  <link rel = "icon" href =  "Buspng.png" 
+        type = "image/x-icon"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.abc
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60% height:60%;
+}
+</style>
+
+<style>
+ul.breadcrumb {
+  padding: 3px 10px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+</style>
+
+<style>
+a {color: black;}
+</style>
+
+
+<style>
+.fa
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+</style>
+
+<style>
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+</style>
+
+<style>
+.avatar
+{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+
+<style>
+body, html
+{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-danger fixed-top">
+  <a class="navbar-brand" href="index.html">
+    <img src="Buspng.png" alt="logo" style="width:70px;">
+  </a>
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="BusHire.html">Bus Hire</a>
+    </li>
+    <li>
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="BusHelp.html">Help</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="BusOffers.html">Offers & Discount</a>
+    </li
+  </ul>
+  <div class="dropdown">
+  <button type="button" class="btn bg-danger text-white dropdown-toggle" data-toggle="dropdown">
+    Manage Booking
+  </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Cancel</a>
+      <a class="dropdown-item" href="#">Reshedule</a>
+      <a class="dropdown-item" href="PrintTicket.html">Show My ticket</a>
+      <a class="dropdown-item" href="#">Email/SMS</a>
+    </div>
+  </div>
+  &nbsp
+  <img src="avatar.png" alt="Avatar" class="avatar">
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container-fluid bg-dark">
+<ul class="breadcrumb bg-dark text-white">
+  <li><a  class="text-white" href="index.html">Home</a></li>
+  <li>Bus Ticket</li>
+</ul>
+</div>
+
+<br>
+
+<div class="container">
+<h2 align="center">COVID-19 UPDATE</h2>
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Attention!</strong> Less Buses are being operated on all the routes, as a precautionary measure to avoid spreading disease.
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h2 align="center">To Know More Click Below</h2>
+  <button type="button" class="abc btn btn-primary" data-toggle="modal" data-target="#myModal1">
+    Read More
+  </button>
+
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h1 class="modal-title">What is Novel Coronavirus (COVID-19)? </h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <div class="modal-body">
+          <h3>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</h3>
+          <br>
+          <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+          <p>The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </p>
+          <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+          <p>COVID-19 mainly spreads through the air when people are near each other long enough,[a] primarily via small droplets or aerosols, as an infected person breathes, coughs, sneezes, sings, or speaks. Transmission via fomites (contaminated surfaces) has not been conclusively demonstrated.[20] It can spread as early as two days before infected persons show symptoms (presymptomatic), and from asymptomatic (no symptoms) individuals. People remain infectious for up to ten days in moderate cases, and two weeks in severe cases. The standard diagnosis method is by real-time reverse transcription polymerase chain reaction (rRT-PCR) from a nasopharyngeal swab.</p>
+          <p>Preventive measures include social distancing, quarantining, ventilation of indoor spaces, covering coughs and sneezes, hand washing, and keeping unwashed hands away from the face. The use of face masks or coverings has been recommended in public settings to minimise the risk of transmissions.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+</div>
+<br>
+
+<div class="container-fluid bg-warning">
+<div class="container">
+  <br>
+  <br>
+  <h1 align="center"><b>WHY BOOK WITH YELLOW BUS</b></h1>
+  <br>
+  <div class="container bg-dark text-dark">
+  <br>
+</div>
+  <div class="card-group">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <h5>SUPERIOR CUSTOMER SERVICE</h5>
+        <hr>
+        <p class="card-text">We put our experience and relationships to good use and are available to solve your travel issues.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <h5>SAFETY+</h5>
+        <br>
+        <hr>
+        <p class="card-text">With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <h5>LOWEST PRICES</h5>
+        <br>
+        <hr>
+        <p class="card-text">We always give you the lowest price with the best partner offers.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <h5>UNMATCHED BENEFITS</h5>
+        <br>
+        <hr>
+        <p class="card-text">We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+      </div>
+    </div>  
+  </div>
+</div>
+<br>
+<br>
+</div>
+
+<br>
+
+<div class="jumbotron">
+<div class="container">
+<table align="center" border="10" cellpadding="10" width="800px">
+<th>
+<br>
+<h5 align="center"><b>ONLINE BUS TICKET BOOKING VS OFFLINE BUS TICKET BOOKING</b></h5>
+<br>
+<hr>
+<br>
+<div class="row">
+  <br>
+  <div class="col-sm-6">
+    <p>Hassle-free bus booking from anywhere & anytime</p>
+    <p>Wide choice of bus seats, bus types & operators.</p>
+    <p>Great offers and cashbacks on booking tickets</p>
+    <p>Unique benefit for women seat selection</p>
+    <p>24/7 Friendly Customer Care assistance</p>
+  </div>
+
+  <div class="col-sm-6">
+    <p>Hassle of reaching bus counter & waiting in long queues</p>
+    <p>Not much choice suiting your preference</p>
+    <p>No discounts</p>
+    <p>No unique benefit for women</p>
+    <p>No Friendly assistance</p>
+  </div>
+</div>
+</th>
+</table>
+</div>
+</div>
+<br>
+
+<div class=container-fluid">
+<div class="container">
+  <h3 align="center"><b><span class="badge badge-success">FIND BUS TICKET WITH YELLOW BUS</span></b></h3>
+  <br>
+  <div class="row>
+    <div class="col-sm-12">
+    <p>Making the right travel arrangements is the genesis of any good holiday. Providing exceptional bus travel arrangements is the mantra that’s followed at redBus. India’s largest online bus ticketing platform has driven the country’s bus booking journey over the past 13 years through thousands of bus operators and routes. Striving to reach new heights when it comes to online bus booking in India, redBus has become the right tool to use to have a smooth bus ticket booking experience. Anybody can use the official website of redBus or the user-friendly app to book their bus tickets from anywhere in the country. From the comfort of your home or from or office or vehicle, people can make an online bus booking with ease. With these successful USPs, redBus has expanded internationally to countries like Singapore, Malaysia, Indonesia, Peru and Columbia.</p>
+    <p><b>Why book bus tickets through redBus</b></p>
+    <p>The online bus booking services of redBus offers a plethora of advantages than it’s offline prehistoric booking modes. Firstly, booking a bus ticket through a travel agent or at a counter is in the past. People have begun to recognize the advantages of making an online bus booking. At a counter, people would have to first stand in a queue in front of a particular bus operator. Once they reach the counter, they would have to book a seat among the seats that are available. If a seat isn’t available on the bus of their choice, the dejected customer would then have to stand in another queue in front of another bus operator. Online bus ticket booking with redBus has eliminated these problems that people used to face. </p>
+    <br>
+    <p>With redBus, customers can view every bus that’s available on any given route in India. They do not have to stand in a queue and accept the price and seat that’s given to them by the travel agent or the ticket clerk behind the counter. Customers can view every detail of the bus including updated pictures of the bus, the type of bus, amenities offered, and much more on the redBus website and app. Customers can even avail exclusive discounts which are offered by redBus that cannot be matched by any discount offered by a travel agent or a counter.</p>
+    <br>
+    <p><b>M-ticket and its advantages</b></p>
+     <p>Have you ever gone to your boarding point and realized that you did not carry your ticket? That feeling can be terrible especially if it’s for a holiday that you’ve taken leaves or made special arrangements for. The M-ticket initiative by redBus was a game-changer in countless ways. Not only did it put an end to the physical form of a ticket or a printout of a bus ticker but it also ensured that passengers didn’t have to rush back home in case they didn’t have their ticket.</p>
+    <p>Once a passenger completes their bus ticket booking procedure, redBus will confirm that the booking has been made. The bus ticket is then sent to the customer’s registered mobile number in the form of an M-ticket and it’s also sent to the registered email ID of the customer. With redBus’ advanced interface, this process takes a few milliseconds to complete.</p>
+    <p>Customers are advised to carry a government-approved identity card that can be used to prove their identity when they have to board their bus.</p>
+    <br>
+    <p><b>Track my Bus</b></p>
+    <p>Have you ever reached your boarding point and wondered about the whereabouts of your bus? Have you ever had a heated conversation with the bus operator about the location of your bus? redBus has addressed these worries and more with the “Track My Bus” feature. With this, customers can track their bus on their app to help them plan their journey to the boarding point or to get off at their desired drop-off point.</p>
+    <p>If the passenger has to be picked up from the drop-off point, they can always share the live location of the bus to help them plan their commute to the drop-off location. This feature also adds to improving the safety standards on the bus. Family members can breathe a sigh of relief as they can always keep a track of the location of the bus in which their loved ones are traveling in. Visit https://www.redbus.in/info/track-my-bus and enter the ticket number and registered email ID to track the concerned bus.</p>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid bg-dark">
+<br>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <h2 align="center">Want to book now?</h2>
+  <p align="center">Make your bus journey a memorable part of your life.</p>
+
+  <button type="button" class="btn btn-primary abc" data-toggle="modal" data-target="#myModal">
+    BOOK NOW
+  </button>
+
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title">Please signin or sign up to continue booking</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+           <button type="submit" class="btn btn-danger">Sign Up</button>&nbsp
+          <button type="button" class="btn btn-info">Sign In</button>
+        <div class="modal-body">
+
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div> 
+</div>
+
+<br>
+<br>
+<div class="container-fluid bg-dark">
+<br>
+</div>
+
+<div class="container-fluid bg-warning">
+<br>
+  <br>
+  <h1 align="center">Yellow Bus Services</h1>
+  <p align="center">Best in class services throughout the India.</p>
+  <div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-sm-3">
+    <h5><b>Top Bus Routes</b></h5>
+    <p><a href="#">Hyderabad to Bangalore Bus</a></p>
+    <p><a href="#">Bangalore to Chennai Bus</a></p>
+    <p><a href="#">Pune to Bangalore Bus</a></p>
+    <p><a href="#">Mumbai to Bangalore Bus</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Top Cities</b></h5>
+    <p><a href="#">Hyderabad Bus Tickets</a></p>
+    <p><a href="#">Bangalore Bus Tickets</a></p>
+    <p><a href="#">Chennai Bus Tickets</a></p>
+    <p><a href="#">Pune Bus Tickets</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Top RTC's</b></h5>
+    <p><a href="#">APSRTC</a></p>
+    <p><a href="#">MSRTC</a></p>
+    <p><a href="#">HRTC</a></p>
+    <p><a href="#">UPSRTC</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Other</b></h5>
+    <p><a href="#">GSRTC</a></p>
+    <p><a href="#">RSRTC</a></p>
+    <p><a href="#">KTCL</a></p>
+    <p><a href="#">PEPSU</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-3">
+    <h5><b>Tempo Traveller in Cities</b></h5>
+    <p><a href="#">Tempo traveller in Bangalore</a></p>
+    <p><a href="#">Tempo traveller in Chennai</a></p>
+    <p><a href="#">Tempo traveller in Mumbai</a></p>
+    <p><a href="#">Tempo traveller in Hyderabad</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">
+    <h5><b>Top Operators</b></h5>
+    <p><a href="#">SRS Travels</a> | <a href="#">Evacay Bus</a> | <a href="#">Kallada Travels</a> | <a href="#">KPN Travels</a> | <a href="#">Orange Travels</a> | <a href="#">Parveen Travels</a> | <a href="#">Rajdhani Express</a> | <a href="#">VRL Travels</a> | <a href="#">Chartered Speed Bus</a> | </p>
+    <p><a href="#">Bengal Tiger</a> | <a href="#">SRM Travels</a> | <a href="#">Infant Jesus</a> | <a href="#">Patel Travels</a> | <a href="#">JBT Travels</a> | <a href="#">Shatabdi Travels</a> | <a href="#">Eagle Travels</a> | <a href="#">Patel Tours and Travels</a> | <a href="#">Raj Express</a> | </p>
+    <p><a href="#">Kanker Roadways</a> | <a href="#">Komitla</a> | <a href="#">Sri Krishna Travels</a> | <a href="#">Humsafar Travels</a> | <a href="#">Mahasagar Travels</a> | <a href="#">Sharma Travels</a> | <a href="#">Manish Travels</a> | <a href="#">Pradhan Travels</a> |</p>
+    <p><a href="#">Shrinath Travels</a> | <a href="#">Universal Travels</a> | <a href="#">Verma Travels</a> | <a href="#">Gujarat Travels</a> | <a href="#">Madurai Radha Travels</a> | <a href="#">Paulo Travels</a> | <a href="#">Jakhar Travels</a> | <a href="#">Kaleswari Travels</a> |</p>
+    <p><a href="#">Royal Travels</a> | <a href="#">Amarnath Travels</a> | <a href="#">Vaibhav Travels</a> | <a href="#">Ganesh Travels</a> | <a href="#">Jabbar Travels</a> | <a href="#">Jain Travels</a> |  <a href="#">VST Travels</a> | <a href="#">Yamani Travels</a> | </p>
+    <p><a href="#">YBM Travels</a> | <a href="#">Hebron Transports</a> | <a href="#">Mahalaxmi travels</a> | <a href="#">MR Travels</a> | <a href="#">Vivegam Travels</a> | <a href="#">Mahendra Travels</a> | <a href="#">Neeta Tours and Travels</a> | <a href="#">Arthi Travels |</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-dark text-light">
+  <br>
+  <br>
+  <img src="Buspng.png" alt="logo" style="width:100px;" class="center">
+  <br>
+  <pre align="center" style="color:white;">YellowBus is the world's largest online bus ticket booking service trusted by over 18 million happy customers globally.
+YellowBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes</pre>
+  <hr>
+  <br>
+  <br>
+</div>
+
+<footer align="center" class="page-footer font-small cyan darken-3">
+  <div class="bglight">
+  <br>
+  <h3 class="display-3">YELLOW BUS</h3>
+  <hr>
+  <p>Ⓒ 2020 ibibogroup All Rights Reserved.</p>
+  <p align="center">
+  <a href="#">YellowBus.in</a>
+  <hr>
+  <p align="center">: Connect With Us :</p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <br>
+  </p>
+  <p aling="center"><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#">Sitemap</a>
+  </p>
+  <p align="center"><a href="#">© 2020 Yellow Bus Services</a>
+  </p>
+  <hr>
+  </div>
+</footer>
+
+
+</body>
+</html>

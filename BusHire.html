@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bus Hire</title>
+  <link rel = "icon" href =  "Buspng.png" 
+        type = "image/x-icon"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.abc
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60% height:60%;
+}
+</style>
+
+<style>
+ul.breadcrumb {
+  padding: 3px 10px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+</style>
+
+<style>
+a {color: black;}
+</style>
+
+
+<style>
+.fa
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+</style>
+
+<style>
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+</style>
+
+<style>
+.avatar
+{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+
+<style>
+body, html
+{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-danger fixed-top">
+  <a class="navbar-brand" href="index.html">
+    <img src="Buspng.png" alt="logo" style="width:70px;">
+  </a>
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="BusTicket.html">Bus Ticket</a>
+    </li>
+    <li>
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="BusHelp.html">Help</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link text-dark" href="BusOffers.html">Offers & Discount</a>
+    </li>
+  </ul>
+  <div class="dropdown">
+  <button type="button" class="btn bg-danger text-white dropdown-toggle" data-toggle="dropdown">
+    Manage Booking
+  </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Cancel</a>
+      <a class="dropdown-item" href="#">Reshedule</a>
+      <a class="dropdown-item" href="PrintTicket.html">Show My ticket</a>
+      <a class="dropdown-item" href="#">Email/SMS</a>
+    </div>
+  </div>
+  &nbsp
+  <img src="avatar.png" alt="Avatar" class="avatar">
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container-fluid bg-dark">
+<ul class="breadcrumb bg-dark text-white">
+  <li><a  class="text-white" href="index.html">Home</a></li>
+  <li>Bus Hire</li>
+</ul>
+</div>
+<div class="container-fluid">
+<img src="Bushire.jpg" width=100%>
+</div>
+<br>
+
+<br>
+
+<div class="container">
+<h2 align="center">COVID-19 UPDATE</h2>
+  <div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Attention!</strong> Less Buses are being operated on all the routes, as a precautionary measure to avoid spreading disease.
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h2 align="center">To Know More Click Below</h2>
+  <button type="button" class="abc btn btn-primary" data-toggle="modal" data-target="#myModal1">
+    Read More
+  </button>
+
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h1 class="modal-title">What is Novel Coronavirus (COVID-19)? </h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <div class="modal-body">
+          <h3>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</h3>
+          <br>
+          <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+          <p>The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </p>
+          <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+          <p>COVID-19 mainly spreads through the air when people are near each other long enough,[a] primarily via small droplets or aerosols, as an infected person breathes, coughs, sneezes, sings, or speaks. Transmission via fomites (contaminated surfaces) has not been conclusively demonstrated.[20] It can spread as early as two days before infected persons show symptoms (presymptomatic), and from asymptomatic (no symptoms) individuals. People remain infectious for up to ten days in moderate cases, and two weeks in severe cases. The standard diagnosis method is by real-time reverse transcription polymerase chain reaction (rRT-PCR) from a nasopharyngeal swab.</p>
+          <p>Preventive measures include social distancing, quarantining, ventilation of indoor spaces, covering coughs and sneezes, hand washing, and keeping unwashed hands away from the face. The use of face masks or coverings has been recommended in public settings to minimise the risk of transmissions.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+</div>
+<br>
+
+
+<div class="jumbotron">
+<br>
+  <div class="container bg-info">
+  <br>
+    <div class="row">
+      <div class="col-sm-12">
+       <h1 align="center"><span class="badge badge-pill badge-danger">ONE</span></h1>
+       <h2 align="center"><span class="badge badge-pill badge-warning">Choose the Journey Type</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 align="center"><span class="badge badge-pill badge-danger">TWO</span></h1>
+        <h2 align="center"><span class="badge badge-pill badge-warning">Tell us about your Travel Plans.</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+          <h1 align="center"><span class="badge badge-pill badge-danger">THREE</span></h1>
+       <h2 align="center"><span class="badge badge-pill badge-warning">Pick the vehicle you like and go places.</span></h2>
+         <br>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <br>
+
+
+<div class="container">
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+    <img src="u1.png" width=300px class="center">
+  <br>
+    </div>
+    <div class="col-sm-6">
+    <br>
+    <h1><b>Buses and Mini Buses Travellers</b>&nbsp<span class="badge badge-success">Best</span></h1>
+    <h5>
+    <a href="#" title="Number of People can travel?" data-toggle="popover" data-trigger="hover" data-content="Ideal for more than 18 People"><button >Know More</button></a>
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+      });
+    </script>
+    </div>
+   <div class="row">
+    <div class="col-sm-6">
+    <img src="u2.png" width=300px class="center">
+  <br>
+    </div>
+    <div class="col-sm-6">
+    <br>
+    <h1><b>Tempo Travellers</b>&nbsp<span class="badge badge-success">New</span></h1>
+    <a href="#" title="Number of People can travel?" data-toggle="popover" data-trigger="hover" data-content="Ideal for 10 - 12 people"><button >Know More</button></a>
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+      });
+    </script>
+    </div>
+   <div class="row">
+    <div class="col-sm-6">
+    <img src="u3.png" width=300px class="center">
+  <br>
+    </div>
+    <div class="col-sm-6">
+    <br>
+    <h1><b>Sedans and SUVs Travellers</b>&nbsp<span class="badge badge-success">Better</span></h1>
+    <a href="#" title="Number of People can travel?" data-toggle="popover" data-trigger="hover" data-content="Ideal for 4 - 6 people"><button >Know More</button></a>
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+      });
+    </script>
+<br>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+  <div class="container-fluid bg-info">
+    <br>
+    <h1 align="center">FAQ's <small>Frequently Asked Questions</small></h1>
+    <div class="row">
+      <div class="col-sm-12">
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          What is redBus Hire?
+        </a>
+      </div>
+      <div id="collapseOne" data-parent="#accordion">
+        <div class="card-body">
+          redBus Hire helps you rent a vehicle from the best operators in your city.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        How does it works?
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          We ask you a few simple questions regarding your trip. We work with the best operators in your city to get you detailed quotations, so that you get the best deal.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        What happens if the vehicle breaks down?
+      </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Since we work with the best operators, the vehicles are usually reliable. In case of a breakdown, it is the operator's responsibility to replace the vehicle during the journey.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+        How are the Kilometers calculated?
+      </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          The 'Kilometers' are calculated basis the return trip distance between the boarding point and the destination. Any additional distance covered within the city between the Garage and the pickup point is also included in it.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+          Which cities are you operational in?
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          We are currently operational in Bangalore, Mumbai, Pune, Chennai, Hyderabad, Delhi, Ahmedabad, Madurai, Mysore, Visakhapatnam, Surat, Vadodara, Vijayawada, Coimbatore, Goa, Pondicherry, Erode, Ooty, Udaipur, Jaipur, Guwahati, Trichy and Kolkata.
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-dark">
+<br>
+</div>
+<br>
+<br>
+
+<div class="container">
+  <h2 align="center">Want to hire now?</h2>
+  <p align="center">Make your bus journey a memorable part of your life.</p>
+
+  <button type="button" class="btn btn-primary abc" data-toggle="modal" data-target="#myModal">
+    HIRE NOW
+  </button>
+
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title">Please signin or sign up to continue booking</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+           <button type="submit" class="btn btn-danger">Sign Up</button>&nbsp
+          <button type="button" class="btn btn-info">Sign In</button>
+        <div class="modal-body">
+
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div> 
+</div>
+
+<br>
+<br>
+<div class="container-fluid bg-dark">
+<br>
+</div>
+
+
+
+<div class="container-fluid bg-warning">
+<br>
+  <br>
+  <h1 align="center">Yellow Bus Services</h1>
+  <p align="center">Best in class services throughout the India.</p>
+  <div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-sm-3">
+    <h5><b>Top Bus Routes</b></h5>
+    <p><a href="#">Hyderabad to Bangalore Bus</a></p>
+    <p><a href="#">Bangalore to Chennai Bus</a></p>
+    <p><a href="#">Pune to Bangalore Bus</a></p>
+    <p><a href="#">Mumbai to Bangalore Bus</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Top Cities</b></h5>
+    <p><a href="#">Hyderabad Bus Tickets</a></p>
+    <p><a href="#">Bangalore Bus Tickets</a></p>
+    <p><a href="#">Chennai Bus Tickets</a></p>
+    <p><a href="#">Pune Bus Tickets</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Top RTC's</b></h5>
+    <p><a href="#">APSRTC</a></p>
+    <p><a href="#">MSRTC</a></p>
+    <p><a href="#">HRTC</a></p>
+    <p><a href="#">UPSRTC</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-2">
+    <h5><b>Other</b></h5>
+    <p><a href="#">GSRTC</a></p>
+    <p><a href="#">RSRTC</a></p>
+    <p><a href="#">KTCL</a></p>
+    <p><a href="#">PEPSU</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+    <div class="col-sm-3">
+    <h5><b>Tempo Traveller in Cities</b></h5>
+    <p><a href="#">Tempo traveller in Bangalore</a></p>
+    <p><a href="#">Tempo traveller in Chennai</a></p>
+    <p><a href="#">Tempo traveller in Mumbai</a></p>
+    <p><a href="#">Tempo traveller in Hyderabad</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">
+    <h5><b>Top Operators</b></h5>
+    <p><a href="#">SRS Travels</a> | <a href="#">Evacay Bus</a> | <a href="#">Kallada Travels</a> | <a href="#">KPN Travels</a> | <a href="#">Orange Travels</a> | <a href="#">Parveen Travels</a> | <a href="#">Rajdhani Express</a> | <a href="#">VRL Travels</a> | <a href="#">Chartered Speed Bus</a> | </p>
+    <p><a href="#">Bengal Tiger</a> | <a href="#">SRM Travels</a> | <a href="#">Infant Jesus</a> | <a href="#">Patel Travels</a> | <a href="#">JBT Travels</a> | <a href="#">Shatabdi Travels</a> | <a href="#">Eagle Travels</a> | <a href="#">Patel Tours and Travels</a> | <a href="#">Raj Express</a> | </p>
+    <p><a href="#">Kanker Roadways</a> | <a href="#">Komitla</a> | <a href="#">Sri Krishna Travels</a> | <a href="#">Humsafar Travels</a> | <a href="#">Mahasagar Travels</a> | <a href="#">Sharma Travels</a> | <a href="#">Manish Travels</a> | <a href="#">Pradhan Travels</a> |</p>
+    <p><a href="#">Shrinath Travels</a> | <a href="#">Universal Travels</a> | <a href="#">Verma Travels</a> | <a href="#">Gujarat Travels</a> | <a href="#">Madurai Radha Travels</a> | <a href="#">Paulo Travels</a> | <a href="#">Jakhar Travels</a> | <a href="#">Kaleswari Travels</a> |</p>
+    <p><a href="#">Royal Travels</a> | <a href="#">Amarnath Travels</a> | <a href="#">Vaibhav Travels</a> | <a href="#">Ganesh Travels</a> | <a href="#">Jabbar Travels</a> | <a href="#">Jain Travels</a> |  <a href="#">VST Travels</a> | <a href="#">Yamani Travels</a> | </p>
+    <p><a href="#">YBM Travels</a> | <a href="#">Hebron Transports</a> | <a href="#">Mahalaxmi travels</a> | <a href="#">MR Travels</a> | <a href="#">Vivegam Travels</a> | <a href="#">Mahendra Travels</a> | <a href="#">Neeta Tours and Travels</a> | <a href="#">Arthi Travels |</a></p>
+    <p><a href="#">More >></a></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-dark text-light">
+  <br>
+  <br>
+  <img src="Buspng.png" alt="logo" style="width:100px;" class="center">
+  <br>
+  <pre align="center" style="color:white;">YellowBus is the world's largest online bus ticket booking service trusted by over 18 million happy customers globally.
+YellowBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes</pre>
+  <hr>
+  <br>
+  <br>
+</div>
+
+<footer align="center" class="page-footer font-small cyan darken-3">
+  <div class="bglight">
+  <br>
+  <h3 class="display-3">YELLOW BUS</h3>
+  <hr>
+  <p>Ⓒ 2020 ibibogroup All Rights Reserved.</p>
+  <p align="center">
+  <a href="#">YellowBus.in</a>
+  <hr>
+  <p align="center">: Connect With Us :</p>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <br>
+  </p>
+  <p aling="center"><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#">Sitemap</a>
+  </p>
+  <p align="center"><a href="#">© 2020 Yellow Bus Services</a>
+  </p>
+  <hr>
+  </div>
+</footer>
+
+
+</body>
+</html>
